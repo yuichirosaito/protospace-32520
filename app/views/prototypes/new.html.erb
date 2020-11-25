@@ -5,8 +5,6 @@
       <h2 class="page-heading">新規プロトタイプ投稿</h2>
         <%= render partial: "form", locals: { prototype: @prototype } %>
     </div>
-     <% else %>
-          <% redirect_to new_user_session_path %>
     <% end %>
   </div>
 </div>

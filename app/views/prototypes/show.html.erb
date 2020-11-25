@@ -11,9 +11,6 @@
           <%= link_to "編集する", edit_prototype_path(@prototype.id), class: :prototype__btn %>
           <%= link_to "削除する", prototype_path(@prototype.id), class: :prototype__btn, method: :delete%>
         </div>
-      
-        <% else %>
-          <% redirect_to new_user_session_path %>
         <% end %>
       <div class="prototype__image">
         <%= image_tag @prototype.image %>
@@ -43,9 +40,7 @@
             <div class="actions">
               <%= f.submit "送信する", class: :form__btn  %>
             </div>
-          <% end %> 
-          <% else %>
-          <% redirect_to new_user_session_path %>
+          <% end %>
         <% end %>
         <ul class="comments_lists">コメント一覧
             <li class="comments_list">
