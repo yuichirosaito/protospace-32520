@@ -14,6 +14,7 @@
 - has_many :comments
 - has_many :prototypes
 
+## prototypes テーブル
 
 | Column    | Type      | Options     |
 | --------  | ------    | ----------- |
